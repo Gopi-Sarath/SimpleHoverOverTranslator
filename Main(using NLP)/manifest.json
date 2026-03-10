@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Japanese AI Translator",
+  "version": "1.0",
+  "description": "Translate Japanese using HuggingFace NLP",
+
+  "permissions": ["storage"],
+
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+
+  "host_permissions": [
+    "https://huggingface.co/*"
+  ],
+
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self'"
+  }
+}

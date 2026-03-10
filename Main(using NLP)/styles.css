@@ -1,0 +1,28 @@
+.translate-me {
+  border-bottom: 2px solid #e91e63;
+  cursor: help;
+}
+
+.translate-me:hover {
+  background: rgba(233,30,99,0.1);
+}
+
+#translation-tooltip {
+
+  position:absolute;
+  background:#1a1a1a;
+  color:white;
+
+  padding:8px 12px;
+
+  font-size:14px;
+
+  border-radius:6px;
+
+  z-index:999999;
+
+  display:none;
+
+  max-width:260px;
+
+}
