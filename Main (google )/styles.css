@@ -1,0 +1,25 @@
+.translate-me {
+  border-bottom: 2px solid #e91e63;
+  cursor: help;
+  transition: background 0.2s;
+}
+
+.translate-me:hover {
+  background: rgba(233, 30, 99, 0.1);
+}
+
+#translation-tooltip {
+  position: absolute;
+  background: #1a1a1a;
+  color: #ffffff;
+  padding: 8px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+  z-index: 2147483647; /* Ensure it stays on top of everything */
+  display: none;
+  max-width: 280px;
+  border-left: 4px solid #e91e63;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  pointer-events: none;
+}
